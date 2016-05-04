@@ -1,0 +1,150 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+I:\ECE353\kevin-zach-master\ECE353-S16-Project\ECE353-S16-Project.uvprojx
+Project File Date:  05/02/2016
+
+<h2>Output:</h2>
+Rebuild target 'ECE353-S16-Project'
+compiling main.c...
+../include/gpio_port.h(169): warning:  #1295-D: Deprecated declaration hw3_gpio_init - give arg types
+  void hw3_gpio_init();
+../include/Io.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+../include/adc.h(57): warning:  #1295-D: Deprecated declaration hw3_adc_init - give arg types
+  void hw3_adc_init();
+main.c(114): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+main.c(134): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+      eeprom_byte_read(EEPROM_I2C_BASE,i,&(read_data1[i]));
+main.c(143): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+      eeprom_byte_read(EEPROM_I2C_BASE,i+80,&(read_data2[i]));
+main.c(151): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+      eeprom_byte_read(EEPROM_I2C_BASE,i+160,&(read_data3[i]));
+main.c(171): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                scanf("%79[^\n]", &data0);
+main.c(188): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                scanf("%79[^\n]", &data1);
+main.c(205): warning:  #181-D: argument is incompatible with corresponding format string conversion
+                scanf("%79[^\n]", &nums2);
+main.c(227): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+      eeprom_byte_read(EEPROM_I2C_BASE,i,&(read_data1[i]));
+main.c(239): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+      eeprom_byte_read(EEPROM_I2C_BASE,i+80,&(read_data2[i]));
+main.c(252): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+      eeprom_byte_read(EEPROM_I2C_BASE,i+160,&(read_data3[i]));
+main.c(266): warning:  #550-D: variable "status" was set but never used
+    uint32_t status;
+main.c(286): warning:  #550-D: variable "status" was set but never used
+        uint32_t status;
+main.c(287): warning:  #177-D: variable "i" was declared but never referenced
+        int i = 0;
+main.c(318): warning:  #223-D: function "start_game" declared implicitly
+         start_game();
+main.c(470): warning:  #940-D: missing return statement at end of non-void function "start_game"
+  }
+main.c: 18 warnings, 0 errors
+compiling adc.c...
+../include/adc.h(57): warning:  #1295-D: Deprecated declaration hw3_adc_init - give arg types
+  void hw3_adc_init();
+drivers\adc.c(191): warning:  #940-D: missing return statement at end of non-void function "initializeADC1"
+  }
+drivers\adc.c: 2 warnings, 0 errors
+compiling gpio_port.c...
+../include/gpio_port.h(169): warning:  #1295-D: Deprecated declaration hw3_gpio_init - give arg types
+  void hw3_gpio_init();
+drivers\gpio_port.c(275): warning:  #940-D: missing return statement at end of non-void function "gpio_config_enable_input"
+  }
+drivers\gpio_port.c(358): warning:  #940-D: missing return statement at end of non-void function "gpio_config_analog_enable"
+  }
+drivers\gpio_port.c(382): warning:  #940-D: missing return statement at end of non-void function "gpio_config_alternate_function"
+  }
+drivers\gpio_port.c(426): warning:  #940-D: missing return statement at end of non-void function "gpio_config_falling_edge_irq"
+  }
+drivers\gpio_port.c: 5 warnings, 0 errors
+compiling timers.c...
+drivers\timers.c(352): warning:  #1-D: last line of file ends without a newline
+  }*/
+drivers\timers.c: 1 warning, 0 errors
+compiling eeprom.c...
+drivers\eeprom.c(120): warning:  #550-D: variable "status" was set but never used
+    i2c_status_t status;
+drivers\eeprom.c: 1 warning, 0 errors
+compiling fonts.c...
+compiling i2c.c...
+compiling lcd.c...
+../include/gpio_port.h(169): warning:  #1295-D: Deprecated declaration hw3_gpio_init - give arg types
+  void hw3_gpio_init();
+drivers\lcd.c(44): warning:  #177-D: function "lcd_assert_reset" was declared but never referenced
+  __INLINE static void lcd_assert_reset(void)
+drivers\lcd.c: 2 warnings, 0 errors
+compiling pc_buffer.c...
+compiling spi.c...
+compiling uart.c...
+compiling uart_irqs.c...
+compiling wireless.c...
+../include/gpio_port.h(169): warning:  #1295-D: Deprecated declaration hw3_gpio_init - give arg types
+  void hw3_gpio_init();
+drivers\wireless.c: 1 warning, 0 errors
+compiling interrupts.c...
+drivers\interrupts.c(124): warning:  #177-D: variable "tmr" was declared but never referenced
+        TIMER0_Type* tmr = (TIMER0_Type *)TIMER0_BASE;
+drivers\interrupts.c(126): warning:  #177-D: variable "myADC" was declared but never referenced
+        ADC0_Type* myADC = (ADC0_Type *) ADC0_BASE;
+drivers\interrupts.c(237): warning:  #550-D: variable "val" was set but never used
+      uint32_t val;
+drivers\interrupts.c(238): warning:  #177-D: variable "counter" was declared but never referenced
+      static uint32_t counter = 0;
+drivers\interrupts.c(241): warning:  #177-D: variable "myADC1" was declared but never referenced
+        ADC0_Type *myADC1;
+drivers\interrupts.c: 5 warnings, 0 errors
+compiling Io.c...
+../include/Io.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+drivers\Io.c(62): warning:  #1-D: last line of file ends without a newline
+  }
+drivers\Io.c: 2 warnings, 0 errors
+assembling startup_TM4C123.s...
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=13024 RO-data=3980 RW-data=136 ZI-data=4448  
+".\obj\ece353_base_project.axf" - 0 Error(s), 37 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.1.1.pack
+                ARM::CMSIS:CORE:3.30.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.30.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.0.0.pack
+                Keil::Device:Startup:1.0.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  I:\ECE353\kevin-zach-master\ECE353-S16-Project\RTE
+  C:\AppV\mdk_510\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include
+  C:\AppV\mdk_510\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+Load "I:\\ECE353\\kevin-zach-master\\ECE353-S16-Project\\obj\\ece353_base_project.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>
